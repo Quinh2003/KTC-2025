@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hide Element</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        #hideParaBtn {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #hideParaBtn:hover {
+            background-color: #c82333;
+        }
+
+        #infoPara {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="hideParaBtn">Hide Element</button>
+    <p id="infoPara">The mountains provide a
+        peaceful escape from the hustle and bustle
+        of everyday life. The fresh air and
+        stunning </p>
+
+    <script>
+        document.getElementById("hideParaBtn").addEventListener("click", function () {
+            document.getElementById("infoPara").style.display = "none";
+        });
+    </script>
+
+</body>
+
+</html>

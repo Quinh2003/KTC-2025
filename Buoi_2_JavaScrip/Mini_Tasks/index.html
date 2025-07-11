@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM Practices</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript DOM Practice</h1>
+
+        <section>
+            <h2>1. Change Text Content</h2>
+            <button id="changeTextBtn" class="btn">Change Text</button>
+            <div id="textDisplay" class="output-box">Old Text</div>
+        </section>
+
+        <section>
+            <h2>2. Toggle CSS Class</h2>
+            <button id="toggleHighlightBtn" class="btn">Toggle Highlight</button>
+            <div class="box"></div>
+        </section>
+
+        <section>
+            <h2>3. Add List Item</h2>
+            <input id="itemInput" type="text" placeholder="Enter item..." />
+            <button id="addItemBtn" class="btn">Add</button>
+            <ul id="itemList" class="list"></ul>
+        </section>
+
+        <section>
+            <h2>4. Remove Element</h2>
+            <ul class="list">
+                <li>Item 1 <button class="deleteBtn btn-small">Delete</button></li>
+                <li>Item 2 <button class="deleteBtn btn-small">Delete</button></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Change Image Source</h2>
+            <button id="changeImageBtn" class="btn">Change Image</button>
+            <img id="mainImage" src="images.jpg" alt="main" />
+        </section>
+
+        <section id="usernameSection">
+            <h2>6. Get Input Value</h2>
+            <input id="usernameInput" type="text" placeholder="Enter username" />
+            <button id="submitUsername" class="btn">Submit</button>
+        </section>
+
+        <section>
+            <h2>7. Alert Button Text</h2>
+            <button class="colorBtn btn red">Red</button>
+            <button class="colorBtn btn green">Green</button>
+            <button class="colorBtn btn blue">Blue</button>
+        </section>
+
+        <section>
+            <h2>8. Hover Background</h2>
+            <div class="hoverBox">Hover me!</div>
+        </section>
+
+        <section>
+            <h2>9. Live Clock</h2>
+            <p id="clockDisplay" class="output-box large-text"></p>
+        </section>
+
+        <section>
+            <h2>10. Validate Email</h2>
+            <input id="emailInput" type="text" placeholder="Enter email" />
+            <button id="validateBtn" class="btn">Validate</button>
+            <p id="errorMessage" class="error"></p>
+        </section>
+
+        <section>
+            <h2>11. Hide Paragraph</h2>
+            <button id="hideParaBtn" class="btn">Hide</button>
+            <p id="infoPara">This is a paragraph that can be hidden.</p>
+        </section>
+
+        <section>
+            <h2>12. Greeting Based on Time</h2>
+            <p id="greetingText" class="output-box large-text"></p>
+        </section>
+
+        <section>
+            <h2>13. Field Error Highlight</h2>
+            <input id="nameInput" type="text" placeholder="Enter your name" />
+            <button id="formSubmit" class="btn">Submit</button>
+            <p id="nameError" class="error"></p>
+        </section>
+
+        <section>
+            <h2>14. Disable After Click</h2>
+            <button id="onceBtn" class="btn">Click Me Once</button>
+        </section>
+
+        <section>
+            <h2>15. Character Counter</h2>
+            <textarea id="bioInput" maxlength="200" rows="3" placeholder="Write about yourself..."></textarea>
+            <p id="charCount" class="info-text">Characters left: 200</p>
+        </section>
+
+        <section>
+            <h2>16. Add Colored Boxes</h2>
+            <button id="addBoxBtn" class="btn">Add Box</button>
+            <div id="boxContainer" class="box-container"></div>
+        </section>
+
+        <section>
+            <h2>17. Strike Through To-do</h2>
+            <ul id="todoList" class="list">
+                <li>Buy milk</li>
+                <li>Study JavaScript</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>18. Show/Hide Password</h2>
+            <input type="password" id="passwordInput" placeholder="Enter password" />
+            <label><input type="checkbox" id="togglePassword" /> Show Password</label>
+        </section>
+
+        <section>
+            <h2>19. Count Checked Checkboxes</h2>
+            <label><input type="checkbox" class="optionBox" /> Option A</label><br />
+            <label><input type="checkbox" class="optionBox" /> Option B</label><br />
+            <label><input type="checkbox" class="optionBox" /> Option C</label><br />
+            <p id="checkedCount" class="info-text">Checked: 0</p>
+        </section>
+
+        <section>
+            <h2>20. Image Gallery</h2>
+            <img id="mainPhoto" src="2.jpg" alt="Main" />
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="3.jpg" alt="Red" />
+                <img class="thumbnail" src="4.jpg" alt="Green" />
+                <img class="thumbnail" src="5.jpg" alt="Blue" />
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

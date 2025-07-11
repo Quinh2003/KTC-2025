@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add New List Item</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #itemInput {
+            padding: 8px;
+            width: 200px;
+        }
+
+        #addItemBtn {
+            padding: 8px 12px;
+            margin-left: 8px;
+        }
+
+        #itemList {
+            margin-top: 20px;
+        }
+
+        #itemList li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Add New List Item</h2>
+    <input type="text" id="itemInput" placeholder="Enter new entry..." />
+    <button id="addItemBtn">Enter</button>
+
+    <ul id="itemList"></ul>
+
+    <script>
+        document.getElementById("addItemBtn").addEventListener("click", function () {
+            const input = document.getElementById("itemInput");
+            const text = input.value.trim();
+
+            if (text !== "") {
+                const li = document.createElement("li");
+                li.textContent = text;
+                document.getElementById("itemList").appendChild(li);
+                input.value = ""; // Xóa ô nhập sau khi thêm
+            }
+        });
+    </script>
+
+</body>
+
+</html>

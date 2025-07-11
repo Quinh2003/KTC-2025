@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get Input Value</title>
+    <style>
+        #usernameInput {
+            padding: 8px;
+            width: 200px;
+        }
+
+        #submitUsername {
+            padding: 8px 12px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Enter username</h2>
+    <input type="text" id="usernameInput" placeholder="Enter your name..." />
+    <button id="submitUsername">Clicked</button>
+
+    <script>
+        document.getElementById("submitUsername").addEventListener("click", function () {
+            const username = document.getElementById("usernameInput").value.trim();
+            if (username) {
+                alert("The username you entered is: " + username);
+            } else {
+                alert("Please enter username.");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

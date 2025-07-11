@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f6fb;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card h4 {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 28px;
+  color: #00bcd4;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+  height: 80px;
+}
+
+.bar {
+  width: 16px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.bar::after {
+  content: attr(class);
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Đặt màu và chiều cao cho từng ngày */
+.mon { height: 25%; background: #f44336; }
+.tue { height: 40%; background: #4caf50; }
+.wed { height: 60%; background: #ffeb3b; }
+.thu { height: 70%; background: #03a9f4; }
+.fri { height: 55%; background: #ff5722; }

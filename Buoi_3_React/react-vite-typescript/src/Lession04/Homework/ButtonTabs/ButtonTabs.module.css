@@ -1,0 +1,76 @@
+.wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+ 
+
+.buttonTabContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+.tabButton {
+  padding: 14px 30px;
+  background-color: #f2f2f2;
+  margin: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover {
+  background-color: #ddd;
+}
+
+.activeTabButton {
+  background-color: #47c179;
+  color: white;
+}
+
+.tabContent {
+  padding: 20px 40px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.lineTabContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.lineTab {
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  color: #555;
+  transition: color 0.3s ease, transform 0.2s;
+  font-size: 14px; 
+}
+
+.lineTab:hover {
+  color: #2db67c;
+}
+
+.activeLine {
+  color: #2db67c;
+  border-bottom: 2px solid #2db67c;
+}
+
+.tabContent {
+  padding: 0 24px;
+  text-align: center;
+}

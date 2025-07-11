@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: #f0f2f5;
+}
+
+.card {
+    height: 200px;
+    width: 150px;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.facebook {
+    background-color: #619bec;
+}
+
+.twitter {
+    background-color: #31c8dd;
+}
+
+.google {
+    background-color: #f78153;
+}
+
+.pinterest {
+    background-color: #f75354;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 100px 0 10px; 
+}
+
+p {
+    margin: 0;
+}

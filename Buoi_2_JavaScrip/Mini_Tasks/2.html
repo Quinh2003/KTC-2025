@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Toggle CSS Class</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(62, 43, 43);
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .highlight {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Toggle Highlight Box</h2>
+    <button id="toggleHighlightBtn">Toggle Highlight</button>
+    <div class="box" id="myBox"></div>
+
+    <script>
+        const btn = document.getElementById("toggleHighlightBtn");
+        const box = document.getElementById("myBox");
+
+        btn.addEventListener("click", () => {
+            box.classList.toggle("highlight");
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+:root {
+    --font-family: 'Lato', sans-serif;
+    --container-width: 400px;
+    --spacing: 16px;
+    --color-white: #ffffff;
+    --color-gray-text: #898181;
+    --color-red: #ef4444;
+    --color-blue: #0ea5e9;
+    --color-green: #10b981;
+    --color-yellow: #eab308;
+    --color-purple: #8b5cf6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    font-family: var(--font-family);
+}
+
+.profile-container {
+    width: var(--container-width);
+    margin: 40px auto;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    position: relative;
+    height: 200px;
+    background-image: url('https://via.placeholder.com/400x200/4F46E5/FFFFFF?text=Background+Image');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-info {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+    z-index: 2;
+}
+
+.text-info h2,
+.text-info p {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.text-info h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.text-info p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.stats {
+    padding: var(--spacing);
+}
+
+.row-container {
+    position: relative;
+}
+
+.row-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #e5e7eb;
+}
+
+.row-container:last-child::after {
+    display: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    margin: 0 var(--spacing);
+    position: relative;
+}
+
+.row::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.row:last-child::after {
+    display: none;
+}
+
+.left-column span {
+    font-weight: bold;
+    color: var(--color-gray-text);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.right-column-pill {
+    padding: 6px 14px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Color Pills */
+
+.red { background-color: var(--color-red); }
+
+.blue { background-color: var(--color-blue);}
+
+.green { background-color: var(--color-green);}
+
+.yellow { background-color: var(--color-yellow);}
+
+.purple { background-color: var(--color-purple);}

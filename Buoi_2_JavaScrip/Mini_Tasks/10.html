@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Validate Form Field</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        #validateBtn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #validateBtn:hover {
+            background-color: #0056b3;
+        }
+
+        #errorMessage {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Enter Email To Check</h2>
+    <input type="text" id="emailInput" placeholder="Import email">
+    <button id="validateBtn">Enter</button>
+    <p id="errorMessage"></p>
+
+    <script>
+        document.getElementById("validateBtn").addEventListener("click", function () {
+            const email = document.getElementById("emailInput").value.trim();
+            const error = document.getElementById("errorMessage");
+
+            // Regex đơn giản để kiểm tra định dạng email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailRegex.test(email)) {
+                error.textContent = "";
+                alert("✅ Enter email successfully!");
+            } else {
+                error.textContent = "❌ Email không hợp lệ. Vui lòng nhập đúng định dạng (ví dụ: trang@gmail.com).";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

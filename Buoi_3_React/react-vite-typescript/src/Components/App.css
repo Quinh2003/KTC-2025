@@ -1,0 +1,35 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2d5179;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+  padding: 40px;
+}
+
+
+.leftPanel,
+.middlePanel,
+.rightPanel,
+.contactPanel {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 800px;
+  border-radius: 20px;
+  background-color: #cddcf1;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

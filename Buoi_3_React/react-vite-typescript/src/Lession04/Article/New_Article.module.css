@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  /*flex-wrap: wrap;*/
+}
+
+.card {
+  width: 270px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  /*flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+
+.image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+}
+
+.views {
+  font-size: 13px;
+  color: #C4660E;
+  padding: 0 10px 10px;
+  margin: 0;
+}

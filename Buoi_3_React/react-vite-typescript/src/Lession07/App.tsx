@@ -1,0 +1,91 @@
+//LESSION - 07 // 08/07/2025
+
+//AFTERNOON
+// import { BrowserRouter as Router, Routes, Route, BrowserRouter,} from "react-router";
+// import Headers from "./Lession07/Afternoon/Components/Headers";
+// import HomePage from "./Lession07/Afternoon/Pages/HomePage";
+// import BlogPage from "./Lession07/Afternoon/Pages/BlogPage";
+// import CategoryPage from "./Lession07/Afternoon/Pages/CategoryPage";
+// import ProductPage from "./Lession07/Afternoon/Pages/ProductPage";
+// import CustomerPage from "./Lession07/Afternoon/Pages/CustomerPage";
+
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       <Headers />
+//       <Routes>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="/blog" element={<BlogPage />} />
+//         <Route path="/category" element={<CategoryPage />} />
+//         <Route path="/product" element={<ProductPage />} />
+//         <Route path="/login" element={<BlogPage />} />
+//         <Route path="/customer" element={<CustomerPage />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
+//HOMEWORD
+
+import { Routes, Route, BrowserRouter } from "react-router";
+
+import { FaBell, FaSearch } from "react-icons/fa";
+import Sidebar from "./HomeWord/Components/Sidebar";
+import PatientsPage from "./HomeWord/Pages/PatientsPage";
+import OverviewPage from "./HomeWord/Pages/OverviewPage";
+import MapPage from "./HomeWord/Pages/MapPage";
+import DepartmentsPage from "./HomeWord/Pages/DepartmentsPage";
+import DoctorsPage from "./HomeWord/Pages/DoctorsPage";
+import HistoryPage from "./HomeWord/Pages/HistoryPage";
+import SettingsPage from "./HomeWord/Pages/SettingsPage";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="flex min-h-screen">
+        <Sidebar />
+        <div className="flex-1 flex flex-col">
+          <div className="flex items-center justify-between px-6 py-4 border-b bg-white">
+            <div className="flex items-center w-full max-w-md">
+              <div className="relative w-full">
+                <span className="absolute left-3 inset-y-0 flex items-center text-gray-400">
+                  <FaSearch className="text-sm" />
+                </span>
+
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="w-full pl-10 pr-4 py-2 border rounded-lg bg-gray-100 text-sm outline-none focus:ring-2 focus:ring-blue-400"
+                />
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 ml-4">
+              <FaBell className="text-gray-500 text-lg cursor-pointer" />
+              <div className="w-8 h-8 rounded-full bg-gray-300"></div>
+              <span className="text-sm font-medium text-gray-700">
+                Emma Kwan
+              </span>
+            </div>
+          </div>
+
+          <div className="p-6 flex-1 bg-gray-50">
+            <Routes>
+              <Route path="/" element={<PatientsPage />} />
+              <Route path="/overview" element={<OverviewPage />} />
+              <Route path="/map" element={<MapPage />} />
+              <Route path="/departments" element={<DepartmentsPage />} />
+              <Route path="/doctors" element={<DoctorsPage />} />
+              <Route path="/history" element={<HistoryPage />} />
+              <Route path="/settings" element={<SettingsPage />} />
+            </Routes>
+          </div>
+        </div>
+      </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;

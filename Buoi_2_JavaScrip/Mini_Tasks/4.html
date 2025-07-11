@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Remove an Element</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .deleteBtn {
+            margin-left: 10px;
+            color: white;
+            background-color: red;
+            border: none;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Item list</h2>
+    <ul id="itemList">
+        <li>Item 1 <button class="deleteBtn">Delete</button></li>
+        <li>Item 2 <button class="deleteBtn">Delete</button></li>
+        <li>Item 3 <button class="deleteBtn">Delete</button></li>
+    </ul>
+
+    <script>
+        // Gán sự kiện click cho tất cả nút .deleteBtn
+        document.querySelectorAll(".deleteBtn").forEach(function (button) {
+            button.addEventListener("click", function () {
+                this.parentElement.remove();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

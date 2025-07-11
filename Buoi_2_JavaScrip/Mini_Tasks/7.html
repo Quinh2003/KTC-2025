@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Change Background</title>
+    <style>
+        .colorBtn {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Choose color</h2>
+    <button class="colorBtn red">Red</button>
+    <button class="colorBtn green">Green</button>
+    <button class="colorBtn blue">Blue</button>
+
+    <script>
+        // Gán sự kiện click cho tất cả nút có class "colorBtn"
+        document.querySelectorAll(".colorBtn").forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                alert("You have chosen: " + this.textContent);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
