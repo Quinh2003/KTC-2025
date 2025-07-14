@@ -14,15 +14,10 @@ interface UserContextProps {
 
 export const UserContext = createContext<UserContextProps | undefined>(undefined);
 
-// Bộ dữ liệu mặc định
-const initialUsers: UserType[] = [
-  { id: 1, name: "Quỳnh", email: "quynh@gmail.com", age: null },
-  { id: 2, name: "Phan Quỳnh", email: "phanquynh@gmail.com", age: 25 },
-];
+
 
 export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  // Khởi tạo state với dữ liệu mặc định
-  const [users, setUsers] = useState<UserType[]>(initialUsers);
+  const [users, setUsers] = useState<UserType[]>([]);
 
   const addUser = (user: Omit<UserType, "id">) => {
     const newUser: UserType = { id: Date.now(), ...user };
